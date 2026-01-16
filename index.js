@@ -8,7 +8,7 @@ function createBot() {
   const bot = mineflayer.createBot({
     host: 'weplayrpg.aternos.me',   // 🌐 Server IP
     port: 25565,               // 🔌 Server Port
-    username: 'AfkinOneblock', // 🤖 Bot Username
+    username: 'AssassinPlayZ', // 🤖 Bot Username
     version: '1.21.1'          // 🧩 Minecraft Version (use 1.21.4 for Mineflayer support)
   })
 
