@@ -6,9 +6,9 @@ const mineflayer = require('mineflayer')
 
 function createBot() {
   const bot = mineflayer.createBot({
-    host: 'AssassinPlayZ7-uhBP.aternos.me',   // 🌐 Server IP
+    host: 'weplayrpg.aternos.me',   // 🌐 Server IP
     port: 25565,               // 🔌 Server Port
-    username: 'afkcreeperfarm', // 🤖 Bot Username
+    username: 'AfkinOneblock', // 🤖 Bot Username
     version: '1.21.1'          // 🧩 Minecraft Version (use 1.21.4 for Mineflayer support)
   })
 
@@ -17,8 +17,8 @@ function createBot() {
     console.log('✅ Bot has joined the server.')
 
   setTimeout(() => {
-    bot.chat('/login KillerAadi')
-    console.log('🔐 Login command sent.')
+    bot.chat('hii im here')
+    console.log('hii sent')
   }, 1500)
 
   setTimeout(() => {
