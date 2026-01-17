@@ -22,7 +22,7 @@ function createBot() {
   }, 1500)
 
   setTimeout(() => {
-    bot.chat('/is warp abhay6660 afk')
+    bot.chat('/effect give AssassinPlayZ minecraft:regeneration infinite 10')
     console.log('🚀 Warp command sent.')
   }, 4000) // wait ~2.5s after login
 })
