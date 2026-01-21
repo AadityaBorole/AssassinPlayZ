@@ -6,10 +6,10 @@ const mineflayer = require('mineflayer')
 
 function createBot() {
   const bot = mineflayer.createBot({
-    host: 'weplayerpg.aternos.me',   // 🌐 Server IP
+    host: 'garrinch21.aternos.me',   // 🌐 Server IP
     port: 25565,               // 🔌 Server Port
-    username: 'AssassinPlayZ', // 🤖 Bot Username
-    version: '1.21.1'          // 🧩 Minecraft Version (use 1.21.4 for Mineflayer support)
+    username: 'IamJustaBaby', // 🤖 Bot Username
+    version: '1.21.11'          // 🧩 Minecraft Version (use 1.21.4 for Mineflayer support)
   })
 
   // === When Bot Spawns ===
@@ -17,7 +17,7 @@ function createBot() {
     console.log('✅ Bot has joined the server.')
 
   setTimeout(() => {
-    bot.chat('hii im here')
+    bot.chat('Hello Lentlemen and Gadies')
     console.log('hii sent')
   }, 1500)
 
