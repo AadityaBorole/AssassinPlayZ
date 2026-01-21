@@ -9,7 +9,7 @@ function createBot() {
     host: 'garrinch211.aternos.me',   // 🌐 Server IP
     port: 25565,               // 🔌 Server Port
     username: 'IamJustaBaby', // 🤖 Bot Username
-    version: '1.21.11'          // 🧩 Minecraft Version (use 1.21.4 for Mineflayer support)
+    version: '1.21.4'          // 🧩 Minecraft Version (use 1.21.4 for Mineflayer support)
   })
 
   // === When Bot Spawns ===
