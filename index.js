@@ -1,5 +1,5 @@
 // === Minecraft AFK Bot ===
-// Created by Ass OP (YouTube: AAG OP) — Cleaned & optimized version by ChatGPT
+//
 // Safe for Node v22 + Mineflayer v4.33.0+
 
 const mineflayer = require('mineflayer')
