@@ -1,14 +1,17 @@
 // === Minecraft AFK Bot ===
-//
+// Created by Ass OP (YouTube: AAG OP) — Cleaned & optimized version by ChatGPT
 // Safe for Node v22 + Mineflayer v4.33.0+
 
 const mineflayer = require('mineflayer')
 
-function createBot() {
+const usernames = ['goonerbot1', 'goonerbot2', 'goonerbot3', 'goonerbot4', 'goonerbot5']
+
+function createBot(accountIndex = 0) {
+  const username = usernames[accountIndex]
   const bot = mineflayer.createBot({
-    host: 'garrinch211.aternos.me',   // 🌐 Server IP
+    host: 'Garrinch211.aternos.me',   // 🌐 Server IP
     port: 25565,               // 🔌 Server Port
-    username: 'IamJustaBaby', // 🤖 Bot Username
+    username: username, // 🤖 Bot Username
     version: '1.21.4'          // 🧩 Minecraft Version (use 1.21.4 for Mineflayer support)
   })
 
@@ -17,12 +20,12 @@ function createBot() {
     console.log('✅ Bot has joined the server.')
 
   setTimeout(() => {
-    bot.chat('Hello Lentlemen and Gadies')
-    console.log('hii sent')
+    bot.chat('dez nuts')
+    console.log('🔐 Login command sent.')
   }, 1500)
 
   setTimeout(() => {
-    bot.chat('/effect give AssassinPlayZ minecraft:regeneration infinite 10')
+    bot.chat('/is warp abhay6660 afk')
     console.log('🚀 Warp command sent.')
   }, 4000) // wait ~2.5s after login
 })
@@ -67,4 +70,10 @@ function createBot() {
 }
 
 // === Start the Bot ===
-createBot()
+// Create all 5 bots with staggered start times
+usernames.forEach((username, index) => {
+  setTimeout(() => {
+    console.log(`🚀 Starting bot ${index + 1}/${usernames.length}: ${username}`)
+    createBot(index)
+  }, index * 3000) // 3 second delay between each bot startup
+})
